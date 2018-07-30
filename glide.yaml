@@ -1,0 +1,24 @@
+package: .
+import:
+- package: golang.org/x/crypto
+  repo: https://github.com/golang/crypto.git
+  subpackages:
+  - ssh
+- package: golang.org/x/sys
+  repo: https://github.com/golang/sys.git
+  subpackages:
+  - unix
+  - windows
+- package: golang.org/x/net
+  repo: https://github.com/golang/net.git
+  subpackages:
+  - html
+- package: golang.org/x/text
+  repo: https://github.com/golang/text.git
+  subpackages:
+  - encoding
+testImport:
+- package: github.com/onsi/ginkgo
+  version: ~1.6.0
+- package: github.com/onsi/gomega
+  version: ~1.4.1
